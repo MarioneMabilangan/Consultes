@@ -17,6 +17,16 @@ public class Interactor {
         return nsel;
     }
 
+    public String data1(){
+        System.out.println("Primer intervalo: ");
+        escaner.nextLine();
+        return escaner.nextLine();
+    }
+    public String data2(){
+        System.out.println("Segundo intervalo: ");
+        return escaner.nextLine();
+    }
+
     public String director(){
         System.out.println("Nom director:");
         escaner.nextLine();

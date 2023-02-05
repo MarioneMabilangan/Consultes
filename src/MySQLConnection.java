@@ -30,7 +30,9 @@ public class MySQLConnection {
     }
 
     private static void estrena() {
-        String query = "SELECT * FROM Films WHERE ReleaseDate BETWEEN '1960-1-1' AND '1995-1-1'";
+        String data = interactor.data1();
+        String data2 = interactor.data2();
+        String query = "SELECT * FROM Films WHERE ReleaseDate BETWEEN '" + data +"' AND '"  + data2 +"'";
         executeQuery(query);
     }
     private static void directors() {
